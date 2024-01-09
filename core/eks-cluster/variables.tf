@@ -9,6 +9,11 @@ variable "aws_region" {
   type        = string
 }
 
+variable "cluster_desired_size" {
+  description = ""
+  type = number
+}
+
 variable "cluster_endpoint_private_access" {
   description = "Indicates whether or not the Amazon EKS private API server endpoint is enabled."
   type        = bool
@@ -25,6 +30,16 @@ variable "cluster_enpoint_public_access_cidrs" {
   description = "CIDR blocks allowed to have public access to endpoints"
   type        = list(string)
   # default     = []
+}
+
+variable "cluster_max_size" {
+  description = ""
+  type = number
+}
+
+variable "cluster_min_size" {
+  description = ""
+  type = number
 }
 
 variable "eks_cluster_access_key" {
