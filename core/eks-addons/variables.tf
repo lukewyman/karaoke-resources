@@ -1,13 +1,19 @@
-variable "aws_region" {
-  description = ""
-  type        = string
-  default     = "us-east-1"
-}
-
 variable "app_name" {
   description = ""
   type        = string
   default     = ""
+}
+
+variable "aws_iam_openid_connect_provider_arn" {
+  description = ""
+  type        = string
+  default     = ""
+}
+
+variable "aws_region" {
+  description = ""
+  type        = string
+  default     = "us-east-1"
 }
 
 variable "cluster_certificate_authority_data" {
@@ -32,12 +38,6 @@ variable "environment" {
   description = ""
   type        = string
   default     = "dev"
-}
-
-variable "aws_iam_openid_connect_provider_arn" {
-  description = ""
-  type        = string
-  default     = ""
 }
 
 variable "vpc_id" {
