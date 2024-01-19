@@ -1,0 +1,5 @@
+# MongoDB (StatefulSet)
+
+## Inputs 
+
+## Outputs
