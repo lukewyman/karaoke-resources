@@ -8,10 +8,10 @@ variable "aws_region" {
   type        = string
 }
 
-variable "environment" {
-  description = "Name of environment: dev, test, uat or prod"
-  type        = string
-}
+# variable "environment" {
+#   description = "Name of environment: dev, test, uat or prod"
+#   type        = string
+# }
 
 variable "vpc_cidr_block" {
   description = "VPC CIDR block"

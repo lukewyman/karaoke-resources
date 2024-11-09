@@ -2,7 +2,7 @@ module "karaoke_vpc" {
   source  = "terraform-aws-modules/vpc/aws"
   version = "5.1.2"
 
-  name            = "${local.app_prefix}-vpc"
+  name            = "${var.app_name}-vpc"
   cidr            = var.vpc_cidr_block
   azs             = data.aws_availability_zones.available.names
   public_subnets  = var.vpc_public_subnets

@@ -34,11 +34,11 @@ variable "eks_cluster_id" {
   default     = ""
 }
 
-variable "environment" {
-  description = ""
-  type        = string
-  default     = "dev"
-}
+# variable "environment" {
+#   description = ""
+#   type        = string
+#   default     = "dev"
+# }
 
 variable "vpc_id" {
   description = ""

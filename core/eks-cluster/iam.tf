@@ -1,5 +1,5 @@
 resource "aws_iam_role" "eks_cluster_role" {
-  name = "${local.app_name}-eks-cluster-role"
+  name = "${var.app_name}-eks-cluster-role"
 
   assume_role_policy = jsonencode({
     Statement = [{
@@ -24,7 +24,7 @@ resource "aws_iam_role_policy_attachment" "amazon_eks_vpc_resource_controller" {
 }
 
 resource "aws_iam_role" "eks_node_group_role" {
-  name = "${local.app_name}-eks-node-group-role"
+  name = "${var.app_name}-eks-node-group-role"
 
   assume_role_policy = jsonencode({
     Statement = [{

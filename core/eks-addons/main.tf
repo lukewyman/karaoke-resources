@@ -5,7 +5,7 @@ resource "helm_release" "ebs_csi_driver" {
     aws_iam_role.ebs_csi_iam_role
   ]
 
-  name = "${local.app_name}-aws-ebs-csi-driver"
+  name = "${var.app_name}-aws-ebs-csi-driver"
 
   repository = "https://kubernetes-sigs.github.io/aws-ebs-csi-driver"
   chart      = "aws-ebs-csi-driver"

@@ -89,9 +89,9 @@ variable "eks_oidc_ca_thumbprint" {
   type        = string
 }
 
-variable "environment" {
-  description = "Name of environment: dev, test, uat or prod"
-  type        = string
-  # default     = "dev"
-}
+# variable "environment" {
+#   description = "Name of environment: dev, test, uat or prod"
+#   type        = string
+#   default     = "dev"
+# }
 
