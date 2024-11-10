@@ -13,7 +13,7 @@ data "terraform_remote_state" "eks" {
 
   config = {
     bucket = "karaoke-infrastructure-state"
-    key = "infrastructure/eks_cluster/terraform.tfstate"
+    key = "infrastructure/eks-cluster/terraform.tfstate"
     region = "us-east-1"
   }
 }
